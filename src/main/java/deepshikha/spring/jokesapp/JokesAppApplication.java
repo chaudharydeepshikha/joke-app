@@ -10,5 +10,7 @@ public class JokesAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JokesAppApplication.class, args);
+
+		System.out.println("Hi, This is Jokes App!!");
 	}
 }
