@@ -17,9 +17,8 @@ public class JokeController {
     @Autowired
     private JokeService jokeService;
 
-    @RequestMapping(value = "/getjoke" , method = RequestMethod.GET)
-    public String getJoke(Model model){
-        List<String> jokeList = new ArrayList<>();
+    @RequestMapping(value ="/getjoke" , method = RequestMethod.GET)
+    public String getJoke(Model model){List<String> jokeList = new ArrayList<>();
         jokeList.add(jokeService.getRandomJoke());
         jokeList.add(jokeService.getRandomJoke());
         jokeList.add(jokeService.getRandomJoke());
